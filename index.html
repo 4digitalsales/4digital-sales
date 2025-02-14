@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
     <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
@@ -151,7 +154,7 @@
                 <!-- Junior web developer focused on high levels of programming! -->
               </p>
               <a href="#contact" class="button button--flex">
-                Contact Me<i class="uil uil-message button__icon"></i>
+                Quero mais informações<i class="uil uil-message button__icon"></i>
               </a>
             </div>
           </div>
@@ -169,7 +172,7 @@
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section__title">Nunca pare de vender</h2>
-        <span class="section__subtitle">My introduction</span>
+        <span class="section__subtitle">Nós te entregamos as melhores estratégias</span>
 
         <div class="about__container container grid">
           <img src="/assets/img/grafico-vendas-2.png" alt="Gráfico de exemplo crescente de Vendas" class="about__img" />
@@ -179,7 +182,7 @@
               Preencha o formulário <br>
               Envie suas informações de contato. Todos os seus dados estarão seguros. <br>
               Receba uma ligação <br> 
-              Em até 12 horas, um dos nossos especialistas fará uma ligação para agendar a reunião mais importante com você.
+              Em até 12 horas, um dos nossos especialistas fará uma ligação para agendar uma reunião com você.
             </p>
 
             <div class="about__info">
@@ -209,8 +212,8 @@
             </div>
 
             <div class="about__buttons">
-              <a download="" href="#" class="button button--flex">
-                Download CV<i class="uil uil-download-alt button__icon"></i>
+              <a href="#testimonial" class="button button--flex">
+                Veja nossos depoimentos<i class="uil uil-arrow-down button__icon"></i>
               </a>
             </div>
           </div>
@@ -252,46 +255,42 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form action="form.php" method="POST" class="contact__form grid">
             <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="contact__label">Nome e sobrenome</label>
-                <input type="text" class="contact__input">
-              </div>
+                  <div class="contact__content">
+                    <label for="name" class="contact__label">Nome e sobrenome</label>
+                    <input type="text" id="name" name="name" class="contact__input" required>
+                </div>
 
-              <div class="contact__content">
-                <label for="" class="contact__label">E-mail corporativo</label>
-                <input type="email" class="contact__input">
-              </div>
+                <div class="contact__content">
+                    <label for="email" class="contact__label">E-mail corporativo</label>
+                    <input type="email" id="email" name="email" class="contact__input" required>
+                </div>
             </div>
 
             <div class="contact__content">
-              <label for="" class="contact__label">Nome da sua empresa</label>
-              <input type="text" class="contact__input">
+                <label for="empresa" class="contact__label">Nome da sua empresa</label>
+                <input type="text" id="empresa" name="empresa" class="contact__input" required>
             </div>
 
             <div class="contact__content">
-              <label for="" class="contact__label">Qual o faturamento mensal da sua empresa?</label>
-              <input type="text" class="contact__input">
+                <label for="faturamento" class="contact__label">Qual o faturamento mensal da sua empresa?</label>
+                <input type="text" id="faturamento" name="faturamento" class="contact__input" required>
             </div>
 
             <div class="contact__content">
-              <label for="" class="contact__label">Qual o seu segmento?</label>
-              <input type="text" class="contact__input">
+                <label for="segmento" class="contact__label">Qual o seu segmento?</label>
+                <input type="text" id="segmento" name="segmento" class="contact__input" required>
             </div>
-
-            <!-- <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
-              <textarea name="" id="" cols="" rows="7" class="contact__input"></textarea>
-            </div> -->
 
             <div>
-              <a href="" class="button button--flex">
-                Receber mais informações 
-                <i class="uil uil-message button__icon"></i>
-              </a>
+                <button type="submit" class="button button--flex">
+                    Receber mais informações 
+                    <i class="uil uil-message button__icon"></i>
+                </button>
             </div>
-          </form>
+        </form>
+
         </div>
       </section>
 
@@ -458,18 +457,18 @@
       <!--==================== QUALIFICATION ====================-->
       <section class="qualification section">
         <h2 class="section__title">Conheça nossa metodologia</h2>
-        <span class="section__subtitle">My personal journey</span>
+        <span class="section__subtitle">4 formas de mudar seu negócio</span>
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
             <div class="qualification__button button--flex qualification__active" data-target='#education'>
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
+              <i class="uil uil-chart-line qualification__icon"></i>
+              Os 4 pilares do nosso método
             </div>
-            <div class="qualification__button button--flex" data-target="#work">
+            <!-- <div class="qualification__button button--flex" data-target="#work">
               <i class="uil uil-briefcase-alt qualification__icon"></i>
               Work
-            </div>
+            </div> -->
           </div>
 
           <div class="qualification__sections">
@@ -511,7 +510,7 @@
                   <div class="qualification__calendar">
                     <i class="uil uil-comment-chart-line"></i>
                     <!-- Escrever algo aqui -->
-                     Te entregamos as melhores ferramentas
+                     Te entregamos as melhores ferramentas.
                   </div>
                 </div>
 
@@ -805,7 +804,7 @@
 
       </section>
 
-      <!--==================== PORTFÓLIO ====================-->
+      <!--==================== PORTFÓLIO ====================--> 
       <!-- <section class="portfolio section" id="portfolio">
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
@@ -889,7 +888,7 @@
       </section> -->
 
       <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section">
+      <section id="testimonial" class="testimonial section">
         <h2 class="section__title">Depoimentos</h2>
         <span class="section__subtitle">O que dizem sobre nossa metodologia</span>
 
@@ -916,11 +915,11 @@
                 </div>
               </div>
 
-              <p class="testimonial__description">A 4Digital é excelente naquilo que faz, além de exercer ótimas parcerias, traz um grande volume de leads para o negócio, entregando bons resultados.</p>
+              <p class="testimonial__description">A 4Digital é excelente naquilo que faz, além de nos trazer ótimas parcerias, traz um grande volume de leads para o negócio, entregando bons resultados.</p>
             </div>
 
              <!--==================== TESTIMONIAL 2 ====================-->
-             <div class="testimonial__content swiper-slide">
+             <!-- <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img src="/assets/img/testimonial2.jpg" alt="" class="testimonial__img">
@@ -941,10 +940,10 @@
               </div>
 
               <p class="testimonial__description">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
-            </div>
+            </div> -->
 
              <!--==================== TESTIMONIAL 3 ====================-->
-             <div class="testimonial__content swiper-slide">
+             <!-- <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img src="/assets/img/testimonial3.jpg" alt="" class="testimonial__img">
@@ -966,7 +965,7 @@
 
               <p class="testimonial__description">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
             </div>
-          </div>
+          </div> -->
 
           <!-- Add Pagination -->
           <div class="swiper-pagination swiper-pagination-testimonial"></div>
